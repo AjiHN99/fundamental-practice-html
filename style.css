@@ -1,6 +1,6 @@
 body {
     background-color: #f0f8ff;
-    font: arial, sans-serif;
+    font-family: Arial, sans-serif;
     padding: 20px;
     color: #333333;
 }
@@ -8,6 +8,7 @@ body {
 h1 {
     color: #1e90ff;
     font-size: 36px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 p {
@@ -20,58 +21,56 @@ h3 {
     font-size: 24px;
 }
 
-ul, li {
-    color: #32cd32;
+li {
+    color: #000000; /* Teks di dalam daftar hitam */
     padding: 10px;
 }
 
-ol{
+ol {
     padding: 10px;
 }
 
-img{
+img {
     border: 2px solid #cccccc;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
 }
 
-th{
+th {
     background-color: #1e90ff;
     color: #ffffff;
     font-weight: bold;
 }
 
-td{
+td {
+    padding: 8px;
     color: #333333;
 }
 
-a  {
+a {
     font-size: 16px;
     text-decoration: none;
     color: #1e90ff;
 }
 
 a:hover {
-    color:#32cd32 ;
+    color: #32cd32;
     text-decoration: none;
 }
 
-form, input:hover{
-    border: #cccccc;
-    padding: 10px;
-    width: 100%;
+input:hover {
+    border-color: #1e90ff;
 }
 
-submit{
+input[type="submit"] {
     background-color: #1e90ff;
     color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
 }
 
-
-
-
-
-
-
-
-
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
