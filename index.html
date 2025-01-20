@@ -1,20 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fundamental and Practice Html</title>
-</head>
-<body>
-    <section id="form-login">
-        <h1>login</h1>
-        <form action="/submit" method="post">
-            <label for="email">email</label>
-            <input type="email" placeholder="email">
-            <label for="password">password</label>
-            <input type="password" placeholder="password">
-            <button type="submit">submit</button>
-        </form>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belajar HTML Dasar</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <!-- Header untuk judul -->
+    <section id="judul">
+      <h1>Selamat Datang di Dunia belajar Web</h1>
+      <p>Alasan saya belajar html adalah untuk menjadi seorang web developer</p>
     </section>
-</body>
+
+    <!-- Header untuk daftar keahlian -->
+    <section id="keahlian">
+      <h3>Daftar Keahlian</h3>
+      <ul>
+        <li>Mampu menggunakan html</li>
+        <li>Mampu menggunakan css</li>
+        <li>Mampu menggunakan javascript</li>
+      </ul>
+      <h3>Keahlian Lainnnya</h3>
+      <ol>
+        <li>Mampu menggunakan php</li>
+        <li>Mampu menggunakan laravel</li>
+        <li>Mampu menggunakan mysql</li>
+      </ol>
+    </section>
+
+    <!-- Header untuk gambar -->
+    <section id="gambar">
+      <img
+        src="asset/image.png"
+        alt="gambar web development"
+        width="250"
+        height="250"
+      />
+    </section>
+
+    <!-- Header untuk jadwal kegiatan harian -->
+    <section id="jadwal">
+      <h3>Jadwal Kegiatan Harian</h3>
+      <table border="1" cellpadding="10" cellspacing="0">
+        <tr>
+          <th>Waktu</th>
+          <th>Kegiatan</th>
+        </tr>
+        <tr>
+          <td>08.00 - 10.00</td>
+          <td>Belajar HTML</td>
+        </tr>
+        <tr>
+          <td>10.00 - 12.00</td>
+          <td>Belajar CSS</td>
+        </tr>
+        <tr>
+          <td>12.00 - 14.00</td>
+          <td>Belajar Javascript</td>
+        </tr>
+      </table>
+    </section>
+
+    <!-- header untuk situs favorit dengan tab baru -->
+    <section id="situs">
+      <h3>Situs Favorit</h3>
+      <a href ="https://www.free4talk.com/" target="_blank">Free4talk</a>
+    </section>
+
+    <!-- Membuat form sederhana -->
+    <section id="form">
+      <h3>Form Sederhana</h3>
+      <form action="/submit" method="POST">
+        <label for="nama_lengkap">
+          <input type="text" name="nama_lengkap" placeholder="Nama Lengkap" />
+        </label>
+        <label for="email">email</label>
+        <input type="email" name="email" placeholder="Email" />
+        <input type="submit" value="Kirim" />
+      </form>
+    </section>
+
+  </body>
 </html>
